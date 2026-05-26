@@ -5,7 +5,11 @@ function Home() {
     <main className="home-page">
       <section className="home-hero">
         <h1 className="hero-title">
-          Future-Proof Composite Aircraft Architecture
+          <span className="hero-kicker">
+            FUTURE-PROOF COMPOSITE
+          </span>
+          <br />
+          AIRCRAFT ARCHITECTURE
         </h1>
 
         <div className="hero-aircraft-wrap">
@@ -17,8 +21,7 @@ function Home() {
         </div>
 
         <p className="hero-description">
-          Modern composite aircraft designed around efficiency, upgradeability,
-          and a faster path from workshop to runway.
+          A future-proof aircraft platform engineered around common structures, modern powerplants, and rapid build times.
         </p>
 
         <div className="hero-buttons">
