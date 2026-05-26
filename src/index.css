@@ -146,3 +146,57 @@ button {
     width: min(1100px, 120vw);
   }
 }
+
+@media (max-width: 700px) {
+  .navbar-container {
+    padding: 0.75rem 1rem;
+  }
+
+  .navbar-logo-image {
+    height: 48px;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-button {
+    padding: 0.65rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .home-hero {
+    padding: 2rem 1rem 4rem;
+  }
+
+  .hero-title {
+    font-size: clamp(1.25rem, 5.6vw, 2rem);
+    line-height: 1.25;
+    letter-spacing: 0.12em;
+    margin-bottom: -0.5rem;
+  }
+
+  .hero-aircraft {
+    width: 125vw;
+    max-width: none;
+    transform: translateX(-6vw);
+  }
+
+  .hero-description {
+    max-width: 330px;
+    margin-top: -0.25rem;
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+
+  .hero-buttons {
+    margin-top: 1.75rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.85rem;
+  }
+
+  .hero-button {
+    width: min(280px, 90vw);
+  }
+}
