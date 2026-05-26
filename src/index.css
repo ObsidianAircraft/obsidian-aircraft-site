@@ -185,7 +185,7 @@ button {
   .hero-description {
     max-width: 330px;
     margin-top: -0.25rem;
-    font-size: 1rem;
+    font-size: .5rem;
     line-height: 1.55;
   }
 
