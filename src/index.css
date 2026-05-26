@@ -170,7 +170,7 @@ button {
   }
 
   .hero-title {
-    font-size: clamp(1.25rem, 5.6vw, 2rem);
+    font-size: clamp(.95rem, 5.6vw, 2rem);
     line-height: 1.25;
     letter-spacing: 0.12em;
     margin-bottom: 4rem;
