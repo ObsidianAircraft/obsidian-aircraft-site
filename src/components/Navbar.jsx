@@ -1,7 +1,12 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <header className="navbar">
       <div className="navbar-container">
@@ -21,11 +26,27 @@ function Navbar() {
           <Link to="/faq">FAQ</Link>
         </nav>
 
-          <Link to="/join" className="navbar-button">
-            Join the Flight Deck
-          </Link>
+        <Link to="/join" className="navbar-button">
+        Join the Flight Deck
+        </Link>
 
+        <button
+            className = "hamburger"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle navigation menu"
+        >
+          ☰
+        </button>
       </div>
+
+      {menuOpen && (
+        <nav className="mobile-menu">
+            <NavLink to="/aircraft" onClick={closeMenu}>Aircraft</NavLink>
+            <NavLink to="/development" onClick={closeMenu}>Development</NavLink>
+            <NavLink to="/about" onClick={closeMenu}>About</NavLink>
+            <NavLink to="/faq" onClick={closeMenu}>FAQ</NavLink>
+        </nav>
+      )}
     </header>
   );
 }
