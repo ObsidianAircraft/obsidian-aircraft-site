@@ -171,9 +171,12 @@ button {
   }
 
   .hero-title {
+    position: relative;
     top: 0;
+    z-index: 3;
+
     margin-top: 0;
-    
+
     font-size: clamp(.5rem, 3vw, 2rem);
     line-height: 1.25;
     letter-spacing: 0.12em;
