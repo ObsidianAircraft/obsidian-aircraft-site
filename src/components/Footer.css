@@ -58,3 +58,33 @@
 .footer-bottom p {
   margin: 0.25rem 0;
 }
+
+@media (max-width: 700px) {
+    .footer {
+        margin-top: 4rem;
+    }
+
+    .footer-container {
+        padding: 2rem 1rem;
+        gap: 1.5rem;
+    }
+
+    .footer-brand h3 {
+        font-size: 1rem;
+        letter-spacing: 0.08em;
+    }
+
+    .footer-brand p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .footer-links {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .footer-bottom {
+        font-size: 0.8rem;
+    }
+}
