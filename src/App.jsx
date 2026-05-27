@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
 import Aircraft from "./pages/Aircraft";
@@ -22,6 +23,8 @@ function App() {
         <Route path="/faq" element={<FAQ />} />
         <Route path="/join" element={<Join />} />
       </Routes>
+      
+      <Footer />
     </BrowserRouter>
   );
 }
