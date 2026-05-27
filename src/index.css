@@ -115,12 +115,12 @@ button {
 }
 
 .hero-button-primary {
-  background: #0077cc;
-  color: white;
+  background: silver;
+  color: black;
 }
 
 .hero-button-primary:hover {
-  background: #1593f0;
+  background: darkgray;
 }
 
 .hero-button-secondary {
