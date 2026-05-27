@@ -176,11 +176,11 @@ button {
     z-index: 3;
 
     margin-top: 0;
+    margin-bottom: 1rem;
 
-    font-size: clamp(.5rem, 3vw, 2rem);
-    line-height: 1.25;
+    font-size: 1rem;
+    line-height: 1.35;
     letter-spacing: 0.12em;
-    margin-bottom: 4rem;
   }
 
   .hero-aircraft {
