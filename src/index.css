@@ -197,6 +197,6 @@ button {
   }
 
   .hero-button {
-    width: min(280px, 90vw);
+    width: min(200px, 80vw);
   }
 }
