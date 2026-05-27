@@ -122,4 +122,8 @@
     text-align: center;
     color: white !important;
   }
+
+  .navbar-button {
+    display: none;
+  }
 }
