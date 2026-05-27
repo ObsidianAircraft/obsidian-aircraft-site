@@ -204,6 +204,7 @@ button {
   }
 
   .hero-button {
+    min-height: 48px;
     width: min(200px, 80vw);
   }
 }
