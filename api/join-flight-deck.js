@@ -58,7 +58,7 @@ export default async function handler(req, res) {
       }
     );
 
-    let searchData = await safeResponse(searchResponse);
+    let searchData = await safeJson(searchResponse);
 
     if (searchResponse.ok && searchData.data && searchData.data.length > 0) {
       return res.status(200).json({
@@ -94,7 +94,7 @@ export default async function handler(req, res) {
       }),
     });
 
-    const leadData = await safeResponse(leadResponse);
+    const leadData = await safeJson(leadResponse);
 
     if (!leadResponse.ok) {
       return res.status(500).json({
