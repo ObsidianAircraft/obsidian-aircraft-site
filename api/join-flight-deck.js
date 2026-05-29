@@ -37,7 +37,7 @@ export default async function handler(req, res) {
       }),
     });
 
-    const tokenData = await safeResponse(tokenResponse);
+    const tokenData = await safeJson(tokenResponse);
 
     if (!tokenData.access_token) {
       return res.status(500).json({
