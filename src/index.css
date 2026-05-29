@@ -492,4 +492,12 @@ button {
   .development-page {
     padding: 3rem 1rem 4rem;
   }
+
+  .development-hero p {
+    line-height: 0.85rem;
+  }
+
+  .development-hero h2 {
+    line-height: 1.5rem;
+  }
 }
