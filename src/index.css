@@ -133,6 +133,64 @@ button {
   color: black;
 }
 
+.home-explore {
+  max-width: 1400px;
+  margin: 5rem auto 0;
+  padding: 0 2rem;
+}
+
+.home-explore h2 {
+  font-family: "Orbitron", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.explore-card {
+  display: block;
+
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+
+  padding: 2rem;
+
+  text-decoration: none;
+
+  transition: all 0.25s ease;
+}
+
+.explore-card:hover {
+  transform: translateY(-4px);
+
+  border-color: silver;
+
+  background: rgba(0,119,204,0.08);
+}
+
+.explore-card h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.2rem;
+}
+
+.explore-card p {
+  margin: 0;
+
+  color: #d0d5dc;
+  line-height: 1.6;
+}
+
 @media (max-width: 800px) {
   .home-hero {
     padding: 2.5rem 1.25rem 4rem;
@@ -206,5 +264,20 @@ button {
   .hero-button {
     min-height: 48px;
     width: min(200px, 80vw);
+  }
+}
+
+@media (max-width: 900px) {
+  .explore-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-explore {
+    margin-top: 3rem;
+    padding: 0 1rem;
+  }
+
+  .home-explore h2 {
+    font-size: 1.5rem;
   }
 }
