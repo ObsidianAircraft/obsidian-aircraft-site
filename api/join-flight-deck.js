@@ -53,7 +53,7 @@ export default async function handler(req, res) {
       }
     );
 
-    const searchData = await searchResponse.json();
+    let searchData = await searchResponse.json();
 
     if (searchResponse.ok && searchData.data && searchData.data.length > 0) {
       return res.status(200).json({
