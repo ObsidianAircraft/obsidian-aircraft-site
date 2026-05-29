@@ -736,15 +736,15 @@ button {
   border: none;
   border-radius: 999px;
 
-  background: #0077cc;
-  color: white;
+  background: silver;
+  color: black;
 
   font-weight: 700;
   cursor: pointer;
 }
 
 .join-form button:hover {
-  background: #1593f0;
+  background: darkgray;
 }
 
 @media (max-width: 800px) {
@@ -764,4 +764,11 @@ button {
   .join-card {
     padding: 1.5rem;
   }
+}
+
+.join-status {
+  margin-top: 1rem;
+  text-align: center;
+  color: #7dbfff;
+  font-weight: 600;
 }
