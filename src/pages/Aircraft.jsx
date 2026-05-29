@@ -2,9 +2,9 @@ function Aircraft() {
   return (
     <main className="aircraft-page">
       <section className="aircraft-hero">
-        <h1>Aircraft Platforms</h1>
+        <p className="page-kicker">Aircraft Platforms</p>
 
-        {/* <h1>O₂ and O₄</h1> */}
+        <h1>O₂ and O₄</h1>
 
         <p>
           Obsidian Aircraft is developing a family of modern composite aircraft
