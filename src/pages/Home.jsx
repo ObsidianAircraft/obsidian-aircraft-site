@@ -23,7 +23,7 @@ function Home() {
         <p className="hero-description">
           A future-proof aircraft platform engineered around common structures, modern powerplants, and rapid build times.
         </p>
-
+{/* 
         <div className="hero-buttons">
           <Link to="/aircraft" className="hero-button hero-button-primary">
             Explore the Aircraft
@@ -33,8 +33,9 @@ function Home() {
             Join the Flight Deck
           </Link>
         </div>
-      </section>
       
+*/}   
+      </section>   
       <section className="home-explore">
         <h2>Explore Obsidian</h2>
 
