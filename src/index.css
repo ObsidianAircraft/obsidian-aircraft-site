@@ -500,4 +500,8 @@ button {
   .development-hero h1 {
     font-size: 1.5rem;
   }
+
+  .status-section p {
+    font-size: 0.85rem;
+  }
 }
