@@ -1,14 +1,23 @@
 export default async function handler(req, res) {
   if (req.method !== "POST") {
-    return res.status(405).json({ success: false, message: "Method not allowed" });
+    return res.status(405).json({
+      success: false,
+      message: "Method not allowed",
+    });
   }
 
   try {
     const { name, email } = req.body;
 
     if (!email) {
-      return res.status(400).json({ success: false, message: "Email is required" });
+      return res.status(400).json({
+        success: false,
+        message: "Email is required",
+      });
     }
+
+    const cleanEmail = email.trim().toLowerCase();
+    const cleanName = name?.trim() || "";
 
     const tokenResponse = await fetch("https://accounts.zoho.com/oauth/v2/token", {
       method: "POST",
@@ -29,18 +38,42 @@ export default async function handler(req, res) {
       return res.status(500).json({
         success: false,
         message: "Unable to retrieve Zoho access token",
-        details: tokenData,
       });
     }
 
-    const nameParts = name?.trim().split(" ") || [];
-    const firstName = nameParts.slice(0, -1).join(" ") || "";
-    const lastName = nameParts.slice(-1).join(" ") || "Flight Deck Subscriber";
+    const accessToken = tokenData.access_token;
+
+    const searchResponse = await fetch(
+      `https://www.zohoapis.com/crm/v8/Leads/search?email=${encodeURIComponent(cleanEmail)}`,
+      {
+        method: "GET",
+        headers: {
+          Authorization: `Zoho-oauthtoken ${accessToken}`,
+        },
+      }
+    );
+
+    const searchData = await searchResponse.json();
+
+    if (searchResponse.ok && searchData.data && searchData.data.length > 0) {
+      return res.status(200).json({
+        success: true,
+        alreadyExists: true,
+        message: "You're already in the Flight Deck.",
+      });
+    }
+
+    const nameParts = cleanName.split(" ").filter(Boolean);
+    const firstName = nameParts.slice(0, -1).join(" ");
+    const lastName =
+      nameParts.length > 1
+        ? nameParts.slice(-1).join(" ")
+        : nameParts[0] || "Flight Deck Subscriber";
 
     const leadResponse = await fetch("https://www.zohoapis.com/crm/v8/Leads", {
       method: "POST",
       headers: {
-        Authorization: `Zoho-oauthtoken ${tokenData.access_token}`,
+        Authorization: `Zoho-oauthtoken ${accessToken}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
@@ -48,7 +81,7 @@ export default async function handler(req, res) {
           {
             First_Name: firstName,
             Last_Name: lastName,
-            Email: email,
+            Email: cleanEmail,
             Lead_Source: "Website",
             Description: "Flight Deck signup from Obsidian Aircraft website",
           },
@@ -66,7 +99,11 @@ export default async function handler(req, res) {
       });
     }
 
-    return res.status(200).json({ success: true, message: "Welcome aboard." });
+    return res.status(200).json({
+      success: true,
+      alreadyExists: false,
+      message: "Welcome aboard.",
+    });
   } catch (error) {
     return res.status(500).json({
       success: false,

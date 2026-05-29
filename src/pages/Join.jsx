@@ -1,114 +1,94 @@
-export default async function handler(req, res) {
-  if (req.method !== "POST") {
-    return res.status(405).json({
-      success: false,
-      message: "Method not allowed",
-    });
-  }
+import { useState } from "react";
 
-  try {
-    const { name, email } = req.body;
+function Join() {
+  const [ name, setName ] = useState("");
+  const [ email, setEmail ] = useState("");
+  const [ status, setStatus ] = useState("");
 
-    if (!email) {
-      return res.status(400).json({
-        success: false,
-        message: "Email is required",
-      });
-    }
+  async function handleSubmit(e) {
+    e.preventDefault();
 
-    const cleanEmail = email.trim().toLowerCase();
-    const cleanName = name?.trim() || "";
+    setStatus("Submitting...");
 
-    const tokenResponse = await fetch("https://accounts.zoho.com/oauth/v2/token", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-      body: new URLSearchParams({
-        refresh_token: process.env.ZOHO_REFRESH_TOKEN,
-        client_id: process.env.ZOHO_CLIENT_ID,
-        client_secret: process.env.ZOHO_CLIENT_SECRET,
-        grant_type: "refresh_token",
-      }),
-    });
-
-    const tokenData = await tokenResponse.json();
-
-    if (!tokenData.access_token) {
-      return res.status(500).json({
-        success: false,
-        message: "Unable to retrieve Zoho access token",
-      });
-    }
-
-    const accessToken = tokenData.access_token;
-
-    const searchResponse = await fetch(
-      `https://www.zohoapis.com/crm/v8/Leads/search?email=${encodeURIComponent(cleanEmail)}`,
-      {
-        method: "GET",
+    try {
+      const response = await fetch("/api/join-flight-deck", {
+        method: "POST",
         headers: {
-          Authorization: `Zoho-oauthtoken ${accessToken}`,
+          "Content-Type": "application/json",
         },
+        body: JSON.stringify({
+          name,
+          email,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setStatus("Welcome aboard.");
+        setName("");
+        setEmail("");
+      } else {
+        setStatus("Unable to submit. Please try again.");
       }
-    );
-
-    const searchData = await searchResponse.json();
-
-    if (searchResponse.ok && searchData.data && searchData.data.length > 0) {
-      return res.status(200).json({
-        success: true,
-        alreadyExists: true,
-        message: "You're already in the Flight Deck.",
-      });
+    } catch (error) {
+      setStatus("Unable to submit. Please try again.");
     }
-
-    const nameParts = cleanName.split(" ").filter(Boolean);
-    const firstName = nameParts.slice(0, -1).join(" ");
-    const lastName =
-      nameParts.length > 1
-        ? nameParts.slice(-1).join(" ")
-        : nameParts[0] || "Flight Deck Subscriber";
-
-    const leadResponse = await fetch("https://www.zohoapis.com/crm/v8/Leads", {
-      method: "POST",
-      headers: {
-        Authorization: `Zoho-oauthtoken ${accessToken}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        data: [
-          {
-            First_Name: firstName,
-            Last_Name: lastName,
-            Email: cleanEmail,
-            Lead_Source: "Website",
-            Description: "Flight Deck signup from Obsidian Aircraft website",
-          },
-        ],
-      }),
-    });
-
-    const leadData = await leadResponse.json();
-
-    if (!leadResponse.ok) {
-      return res.status(500).json({
-        success: false,
-        message: "Unable to create Zoho lead",
-        details: leadData,
-      });
-    }
-
-    return res.status(200).json({
-      success: true,
-      alreadyExists: false,
-      message: "Welcome aboard.",
-    });
-  } catch (error) {
-    return res.status(500).json({
-      success: false,
-      message: "Server error",
-      error: error.message,
-    });
   }
+
+  return (
+    <main className="join-page">
+      <section className="join-hero">
+        <p className="page-kicker">The Flight Deck</p>
+
+        <h1>Follow the Development of Obsidian Aircraft</h1>
+
+        <p>
+          Get future updates, aircraft announcements, development milestones,
+          and behind-the-scenes progress from Obsidian Aircraft.
+        </p>
+      </section>
+
+      <section className="join-card">
+        <h2>Stay Connected</h2>
+
+        <p>
+          Obsidian is not accepting aircraft reservations or deposits at this
+          time. The Flight Deck is simply a way to follow development and receive
+          future updates.
+        </p>
+
+        <form className="join-form" onSubmit={handleSubmit}>
+          <label>
+            Name
+            <input 
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder="Your name"
+            />
+          </label>
+
+          <label>
+            Email
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="you@example.com"
+            />
+          </label>
+
+          <button type="submit">Join the Flight Deck</button>
+          {status && (
+            <p className="join-status">
+              {status}
+            </p>
+          )}
+        </form>
+      </section>
+    </main>
+  );
 }
+
+export default Join;
