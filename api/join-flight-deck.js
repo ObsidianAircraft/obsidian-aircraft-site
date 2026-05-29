@@ -6,6 +6,11 @@ export default async function handler(req, res) {
     });
   }
 
+  async function safeJson(response) {
+    const text = await response.text();
+    return text ? JSON.parse(text) : {};
+  }
+
   try {
     const { name, email } = req.body;
 
@@ -32,7 +37,7 @@ export default async function handler(req, res) {
       }),
     });
 
-    const tokenData = await tokenResponse.json();
+    const tokenData = await safeResponse(tokenResponse);
 
     if (!tokenData.access_token) {
       return res.status(500).json({
@@ -53,7 +58,7 @@ export default async function handler(req, res) {
       }
     );
 
-    let searchData = await searchResponse.json();
+    let searchData = await safeResponse(searchResponse);
 
     if (searchResponse.ok && searchData.data && searchData.data.length > 0) {
       return res.status(200).json({
@@ -89,7 +94,7 @@ export default async function handler(req, res) {
       }),
     });
 
-    const leadData = await leadResponse.json();
+    const leadData = await safeResponse(leadResponse);
 
     if (!leadResponse.ok) {
       return res.status(500).json({
