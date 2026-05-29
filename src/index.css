@@ -571,4 +571,7 @@ button {
     font-size: 0.85rem;
   }
 
+  .about-hero h1 {
+    font-size: 1.5rem;
+  }
 }
