@@ -494,10 +494,10 @@ button {
   }
 
   .development-hero p {
-    line-height: 0.85rem;
+    font-size: 0.85rem;
   }
 
   .development-hero h2 {
-    line-height: 1.5rem;
+    font-size: 1.5rem;
   }
 }
