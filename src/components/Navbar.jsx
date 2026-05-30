@@ -24,7 +24,7 @@ function Navbar() {
           <Link to="/development">Development</Link>
           <Link to="/about">About</Link>
           <Link to="/faq">FAQ</Link>
-          <Link to="merch.obsidianaircraft.com">Merch</Link>
+          <a href="https://merch.obsidianaircraft.com" target="_blank" rel="noreferrer">Merch</a>
         </nav>
 
         <Link to="/join" className="navbar-button">
@@ -46,7 +46,7 @@ function Navbar() {
             <NavLink to="/development" onClick={closeMenu}>Development</NavLink>
             <NavLink to="/about" onClick={closeMenu}>About</NavLink>
             <NavLink to="/faq" onClick={closeMenu}>FAQ</NavLink>
-            <NavLink to="merch.obsidianaircraft.com" onClick={closeMenu}>Merch</NavLink>
+            <a href="https://merch.obsidianaircraft.com" target="_blank" rel="noreferrer" onClick={closeMenu}>Merch</a>
         </nav>
       )}
     </header>
