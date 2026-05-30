@@ -25,11 +25,11 @@ function Join() {
       const data = await response.json();
 
       if (data.success) {
-        setStatus("Welcome aboard.");
+        setStatus(data.message || "Welcome aboard.");
         setName("");
         setEmail("");
       } else {
-        setStatus("Unable to submit. Please try again.");
+        setStatus(data.message || "Unable to submit. Please try again.");
       }
     } catch (error) {
       setStatus("Unable to submit. Please try again.");
