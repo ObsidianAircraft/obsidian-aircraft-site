@@ -23,7 +23,7 @@ function Footer() {
 
         <div className="footer-bottom">
           <p>© 2026 Obsidian Aircraft LLC</p>
-          <p>Camas, Washington</p>
+          <p>Vancouver, Washington</p>
         </div>
 
       </div>
