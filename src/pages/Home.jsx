@@ -7,6 +7,10 @@ function Home() {
     <>
       <Helmet>
         <title>Obsidian Aircraft | Future-Proof Composite Aircraft Architecture</title>
+        <meta
+          name="description"
+          content="Obsidian Aircraft is developing a future-proof composite aircraft platform designed around efficiency, upgradeability, and modern propulsion systems."
+        />
       </Helmet>
         <main className="home-page">
           <section className="home-hero">
