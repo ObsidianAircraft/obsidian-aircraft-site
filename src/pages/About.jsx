@@ -3,6 +3,10 @@ function About() {
     <>
       <Helmet>
         <title>About Obsidian Aircraft</title>
+        <meta
+          name="description"
+          content="Learn about Obsidian Aircraft, our mission, and our vision for future-proof aircraft design."
+        />
       </Helmet>
       <main className="about-page">
         <section className="about-hero">

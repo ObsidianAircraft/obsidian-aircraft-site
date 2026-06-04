@@ -40,6 +40,10 @@ function Join() {
     <>
       <Helmet>
         <title>Join the Flight Deck | Obsidian Aircraft</title>
+        <meta
+          name="description"
+          content="Frequently asked questions about Obsidian Aircraft, aircraft development, and future platform plans."
+        />
       </Helmet>
       <main className="join-page">
         <section className="join-hero">

@@ -3,6 +3,10 @@ function Development() {
     <>
       <Helmet>
         <title>Aircraft Development Program | Obsidian Aircraft</title>
+        <meta
+          name="description"
+          content="Follow the development of Obsidian Aircraft as we design and refine a next-generation composite aircraft platform."
+        />
       </Helmet>
       <main className="development-page">
 

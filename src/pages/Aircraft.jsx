@@ -3,6 +3,10 @@ function Aircraft() {
     <>
       <Helmet>
         <title>Aircraft Platform | Obsidian Aircraft</title>
+        <meta
+          name="description"
+          content="Explore the Obsidian Aircraft platform, including modular two-seat and four-seat aircraft concepts built around a shared composite architecture."
+        />
       </Helmet>
       <main className="aircraft-page">
         <section className="aircraft-hero">

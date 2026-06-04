@@ -3,6 +3,10 @@ function FAQ() {
     <>
       <Helmet>
         <title>Frequently Asked Questions | Obsidian Aircraft</title>
+        <meta
+          name="description"
+          content="Frequently asked questions about Obsidian Aircraft, aircraft development, and future platform plans."
+        />
       </Helmet>
       <main className="faq-page">
         <section className="faq-hero">
