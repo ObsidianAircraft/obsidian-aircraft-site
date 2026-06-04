@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import Analytics from "./components/Analytics";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
@@ -13,6 +14,7 @@ import Join from "./pages/Join";
 function App() {
   return (
     <BrowserRouter>
+      <Analytics />
       <Navbar />
 
       <Routes>
