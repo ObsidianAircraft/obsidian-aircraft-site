@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
+<Helmet>
+  <title>Osbidian Aircraft | Future-Proof Composite Aircraft Architecture</title>
+</Helmet>
 function Home() {
   return (
     <main className="home-page">
