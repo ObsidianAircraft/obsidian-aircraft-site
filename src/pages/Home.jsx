@@ -78,7 +78,7 @@ function Home() {
             </div>
           </section>
         </main>
-    </>
+      </>
   );
 }
 

@@ -8,8 +8,8 @@ ReactGA.initialize("G-RT6Y76BHG4");
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <HelmetProvier>
+    <HelmetProvider>
       <App />
-    </HelmetProvier>
+    </HelmetProvider>
   </StrictMode>,
 )
