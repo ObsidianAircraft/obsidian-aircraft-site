@@ -4,7 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import ReactGA from "react-ga4";
 
-ReactGA.initialize("G-L8NV8BG3B3");
+ReactGA.initialize("G-RT6Y76BHG4");
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
