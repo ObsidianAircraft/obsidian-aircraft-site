@@ -22,7 +22,7 @@ function WhyModularArchitecture() {
         <h1>Why Modular Aircraft Architecture Matters</h1>
 
         <img
-            src="/images/aircraft/O4_transparent_background.png"
+            src="/images/aircraft/Insights-1.png"
             alt="Obsidian modular aircraft platform"
         />
 
