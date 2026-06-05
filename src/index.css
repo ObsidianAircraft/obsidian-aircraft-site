@@ -890,7 +890,7 @@ button {
 
 .insight-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(0, 119, 204, 0.6);
+  border-color: silver;
   background: rgba(0, 119, 204, 0.08);
 }
 
