@@ -25,4 +25,13 @@
     <loc>https://obsidianaircraft.com/join</loc>
   </url>
 
+  <url>
+    <loc>https://obsidianaircraft.com/insights</loc>
+  </url>
+
+  <url>
+    <loc>
+      https://obsidianaircraft.com/insights/modular-aircraft-architecture
+    </loc>
+  </url>
 </urlset>

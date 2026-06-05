@@ -10,6 +10,8 @@ import Development from "./pages/Development";
 import About from "./pages/About";
 import FAQ from "./pages/FAQ";
 import Join from "./pages/Join";
+import Insights from "./pages/Insights";
+import WhyModularArchitecture from "./pages/Why-Modular-Architecture";
 
 function App() {
   return (
@@ -24,6 +26,11 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/join" element={<Join />} />
+        <Route path="/insights" element={<Insights />} />
+        <Route 
+          path="/insights/modular-aircraft-architecture"
+          element={<WhyModularArchitecture />}
+        />
       </Routes>
       
       <Footer />

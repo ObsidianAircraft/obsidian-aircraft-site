@@ -22,6 +22,7 @@ function Navbar() {
         <nav className="navbar-links">
           <Link to="/aircraft">Aircraft</Link>
           <Link to="/development">Development</Link>
+          <Link to="/insights">Insights</Link>
           <Link to="/about">About</Link>
           <Link to="/faq">FAQ</Link>
           <a href="https://merch.obsidianaircraft.com" target="_blank" rel="noreferrer">Merch</a>
