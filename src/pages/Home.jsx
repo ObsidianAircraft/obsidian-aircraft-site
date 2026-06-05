@@ -79,23 +79,27 @@ function Home() {
           </section>
 
             
-          <section className="explore-insights">
+          <section className="home-insights">
             <h2>Latest Insights</h2>
 
-            <div className="explore-grid">
-
+            <div className="insights-grid">
               <Link 
                 to="/insights/modular-aircraft-architecture" 
-                className="explore-card"
+                className="insight-card"
               >
+                <p className="insight-label">INSIGHTS</p>
+
                 <h3>Why Modular Aircraft Architecture Matters</h3>
+
                 <p>
                   Most aircraft are designed as individual products. We believe the future 
                   belongs to adaptable platforms that support multiple missions, evolving 
                   technologies, and long-term value.
                 </p>
+
+                <span className="insight-read-more">Read Article →</span>
               </Link>
-              </div>
+            </div>
           </section>
         </main>
       </>
