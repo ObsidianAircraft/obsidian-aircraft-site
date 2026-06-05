@@ -79,7 +79,7 @@ function Home() {
           </section>
 
             
-          <section className="home-insights">
+          <section className="explore-insights">
             <h2>Latest Insights</h2>
 
             <div className="explore-grid">
