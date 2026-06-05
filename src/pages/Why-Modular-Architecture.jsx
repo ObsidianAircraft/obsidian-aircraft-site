@@ -16,13 +16,13 @@ function WhyModularArchitecture() {
 
       <main className="article-page">
         <p className="article-date">
-            June 2026 • Obsidian Insights
+            June 2026 • Obsidian Insights #1
         </p>
-        
+
         <h1>Why Modular Aircraft Architecture Matters</h1>
 
         <img
-            src="/images/aircraft/o4_transparent_background.png"
+            src="/images/aircraft/O4_transparent_background.png"
             alt="Obsidian modular aircraft platform"
         />
 
