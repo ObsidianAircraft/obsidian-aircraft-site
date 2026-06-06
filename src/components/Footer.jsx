@@ -17,6 +17,7 @@ function Footer() {
         <nav className="footer-links">
           <NavLink to="/aircraft">Aircraft</NavLink>
           <NavLink to="/development">Development</NavLink>
+          <NavLink to="/insights">Insights</NavLink>
           <NavLink to="/about">About</NavLink>
           <NavLink to="/faq">FAQ</NavLink>
         </nav>
