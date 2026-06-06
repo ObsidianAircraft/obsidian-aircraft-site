@@ -813,7 +813,7 @@ button {
   max-width: 900px;
   height: auto;
   display: block;
-  margin: 0 auto 3rem;
+  margin: 0 auto -3rem;
   border-radius: 12px;
 }
 
