@@ -87,7 +87,7 @@ function Home() {
                 to="/insights/modular-aircraft-architecture" 
                 className="insight-card"
               >
-                <p className="insight-label">INSIGHTS</p>
+                <p className="insight-label">INSIGHTS • VOL 1 • ISSUE 1</p>
 
                 <h3>Why Modular Aircraft Architecture Matters</h3>
 
