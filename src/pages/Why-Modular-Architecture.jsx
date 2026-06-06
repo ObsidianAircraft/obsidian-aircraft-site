@@ -15,13 +15,14 @@ function WhyModularArchitecture() {
       </Helmet>
 
       <main className="article-page">
+        
+
+        <h1>Why Modular Aircraft Architecture Matters</h1>
         <p className="article-date">
             June 2026 • Obsidian Insights #1
         </p>
 
-        <h1>Why Modular Aircraft Architecture Matters</h1>
-
-        <img
+        <img className="article-hero"
             src="/images/aircraft/Insights-1.png"
             alt="Obsidian modular aircraft platform"
         />
