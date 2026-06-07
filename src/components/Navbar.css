@@ -126,4 +126,11 @@
   .navbar-button {
     display: none;
   }
+
+  .obsidian-insights {
+    font-family: "Orbitron", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+  }
 }

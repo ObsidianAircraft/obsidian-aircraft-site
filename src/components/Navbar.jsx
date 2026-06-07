@@ -22,7 +22,9 @@ function Navbar() {
         <nav className="navbar-links">
           <Link to="/aircraft">Aircraft</Link>
           <Link to="/development">Development</Link>
-          <Link to="/insights">Insights</Link>
+          <div className="obsidian-insights">
+            <Link to="/insights">OBSIDIAN INSIGHTS</Link>
+          </div>
           <Link to="/about">About</Link>
           <Link to="/faq">FAQ</Link>
           <a href="https://merch.obsidianaircraft.com" target="_blank" rel="noreferrer">Merch</a>
@@ -45,7 +47,9 @@ function Navbar() {
         <nav className="mobile-menu">
             <NavLink to="/aircraft" onClick={closeMenu}>Aircraft</NavLink>
             <NavLink to="/development" onClick={closeMenu}>Development</NavLink>
-            <NavLink to="/insights" onClick={closeMenu}>Insights</NavLink>
+            <div className="obsidian-insights">
+              <NavLink to="/insights" onClick={closeMenu}>OBSIDIAN INSIGHTS</NavLink>
+            </div>
             <NavLink to="/about" onClick={closeMenu}>About</NavLink>
             <NavLink to="/faq" onClick={closeMenu}>FAQ</NavLink>
             <a href="https://merch.obsidianaircraft.com" target="_blank" rel="noreferrer" onClick={closeMenu}>Merch</a>

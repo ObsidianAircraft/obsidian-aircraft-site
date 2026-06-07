@@ -59,6 +59,13 @@
   margin: 0.25rem 0;
 }
 
+.obsidian-insights {
+    font-family: "Orbitron", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+  }
+
 @media (max-width: 700px) {
     .footer {
         margin-top: 4rem;
@@ -88,4 +95,6 @@
     .footer-bottom {
         font-size: 0.8rem;
     }
+
+
 }

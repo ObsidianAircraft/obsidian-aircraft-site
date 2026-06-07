@@ -4,14 +4,17 @@ function Insights() {
   return (
     <main className="page">
       <section className="home-insights">
-            <h2>Latest Insights</h2>
+            <h2>Obsidian Insights</h2>
+            <div className="home-subheader">
+              Aviation, engineering, and aircraft development insights from Obsidian Aircraft
+            </div>
 
             <div className="insights-grid">
               <Link 
                 to="/insights/modular-aircraft-architecture" 
                 className="insight-card"
               >
-                <p className="insight-label">INSIGHTS • VOL 1 • ISSUE 1</p>
+                <p className="insight-label">SUMMER 2026 • OBSIDIAN INSIGHTS • VOLUME 1 • ISSUE 1</p>
 
                 <h3>Why Modular Aircraft Architecture Matters</h3>
 
