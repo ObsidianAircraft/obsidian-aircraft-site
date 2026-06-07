@@ -45,6 +45,7 @@ function Navbar() {
         <nav className="mobile-menu">
             <NavLink to="/aircraft" onClick={closeMenu}>Aircraft</NavLink>
             <NavLink to="/development" onClick={closeMenu}>Development</NavLink>
+            <NavLink to="/insights" onClick={closeMenu}>Insights</NavLink>
             <NavLink to="/about" onClick={closeMenu}>About</NavLink>
             <NavLink to="/faq" onClick={closeMenu}>FAQ</NavLink>
             <a href="https://merch.obsidianaircraft.com" target="_blank" rel="noreferrer" onClick={closeMenu}>Merch</a>
