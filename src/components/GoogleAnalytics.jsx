@@ -15,4 +15,4 @@ function GoogleAnalytics() {
   return null;
 }
 
-export default Analytics;
+export default GoogleAnalytics;
