@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Analytics from "./components/Analytics";
+import { Analytics } from "@vercel/analytics/react";
+import GoogleAnalytics from "./components/Analytics";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
@@ -17,6 +18,7 @@ import WhyModularArchitecture from "./pages/Why-Modular-Architecture";
 function App() {
   return (
     <BrowserRouter>
+      <GoogleAnalytics />
       <Analytics />
       <ScrollToTop />
       <Navbar />
