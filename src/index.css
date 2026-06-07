@@ -765,13 +765,40 @@ button {
     padding: 1.5rem;
   }
 
+  .article-page {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 6rem;
+  }
+
+  .article-page h1 {
+    font-family: "Orbitron", sans-serif;
+    font-size: 2.7rem;
+    font-weight: 600;
+    line-height: 1.12;
+    margin-bottom: 1.75rem;
+    text-align: center;
+  }
+
+  .article-page h2 {
+    font-family: "Orbitron", sans-serif;
+    font-size: clamp(1.2rem, 2vw, 1.6rem);
+    font-weight: 600;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+
+  .article-page p {
+    color: #d0d5dc;
+    font-size: 1.12rem;
+    line-height: 1.75;
+  }
   .article-page img {
     width: 100%;
-    max-width: 800px;
-    height: auto;
+    max-width: 520px;
     display: block;
-    margin: 5rem auto 6rem;
-    border-radius: 12px;
+    margin: 0 auto 2.5rem;
   }
 }
 
