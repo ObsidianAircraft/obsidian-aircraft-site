@@ -19,7 +19,7 @@ function WhatMosaicMeansForTheFutureOfUSAviation() {
 
         <h1>What MOSAIC Means for the Future of U.S. Aviation</h1>
         <p className="article-date">
-            June 2026 • Obsidian Insights • Volume 1 • Issue 2
+            Summer 2026 • Obsidian Insights • Volume 1 • Issue 2
         </p>
 
         <p>

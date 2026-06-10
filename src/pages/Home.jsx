@@ -87,7 +87,7 @@ function Home() {
                 to="/insights/modular-aircraft-architecture" 
                 className="insight-card"
               >
-                <p className="insight-label">INSIGHTS • VOL 1 • ISSUE 1</p>
+                <p className="insight-label">OBSIDIAN INSIGHTS • VOL 1 • ISSUE 1</p>
 
                 <h3>Why Modular Aircraft Architecture Matters</h3>
 
@@ -104,7 +104,7 @@ function Home() {
                 to="/insights/what-mosaic-means" 
                 className="insight-card"
               >
-                <p className="insight-label">SUMMER 2026 • OBSIDIAN INSIGHTS • VOLUME 1 • ISSUE 2</p>
+                <p className="insight-label">OBSIDIAN INSIGHTS • VOLUME 1 • ISSUE 2</p>
 
                 <h3>What MOSAIC Means for the Future of U.S. Aviation</h3>
 
