@@ -15,6 +15,7 @@ import FAQ from "./pages/FAQ";
 import Join from "./pages/Join";
 import Insights from "./pages/Insights";
 import WhyModularArchitecture from "./pages/Why-Modular-Architecture";
+import WhatMosaicMeansForTheFutureOfUSAviation from "./pages/What-Mosaic-Means-For-The-Future-Of-US-Aviation";
 
 function App() {
   return (
@@ -36,6 +37,10 @@ function App() {
         <Route 
           path="/insights/modular-aircraft-architecture"
           element={<WhyModularArchitecture />}
+        />
+        <Route
+          path="insights/what-mosaic-means"
+          element={<WhatMosaicMeansForTheFutureOfUSAviation />}
         />
       </Routes>
       

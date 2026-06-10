@@ -272,7 +272,9 @@ button {
 
 .insights-grid {
   display: flex;
-  justify-content: center;
+  flex-direction:  column;
+  align-items: center;
+  gap: 2rem; /*Adjust to taste */
 }
 
 .insight-label {
@@ -972,5 +974,6 @@ button {
 
   .insights-grid {
     margin-top: 0;
+    margin-bottom: 5rem;
   }
 }

@@ -99,6 +99,24 @@ function Home() {
 
                 <span className="insight-read-more">Read Article →</span>
               </Link>
+
+              <Link 
+                to="/insights/what-mosaic-means" 
+                className="insight-card"
+              >
+                <p className="insight-label">SUMMER 2026 • OBSIDIAN INSIGHTS • VOLUME 1 • ISSUE 2</p>
+
+                <h3>What MOSAIC Means for the Future of U.S. Aviation</h3>
+
+                <p>
+                  On July 24, 2026, the FAA's Modernization of Special Airworthiness Certification 
+                  initiative, commonly known as MOSAIC, will take effect. The changes represent the 
+                  most significant update to light aircraft regulations since the creation of the 
+                  Sport Pilot and Light Sport Aircraft categories.
+                </p>
+
+                <span className="insight-read-more">Read Article →</span>
+              </Link>
             </div>
           </section>
         </main>
