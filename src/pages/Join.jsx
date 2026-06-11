@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 
 function Join() {
   const [ name, setName ] = useState("");
