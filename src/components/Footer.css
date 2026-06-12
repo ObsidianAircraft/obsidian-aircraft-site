@@ -95,6 +95,38 @@
     .footer-bottom {
         font-size: 0.8rem;
     }
+}
 
+.footer-social {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
 
+.footer-social a {
+  color: inherit;
+  font-size: 1.4rem;
+  transition: opacity 0.2s ease;
+}
+
+.footer-social a:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .footer-social {
+    gap: 1.5rem;
+    margin: 2rem 0 1rem;
+  }
+
+  .footer-social a {
+    font-size: 1.75rem;
+  }
 }
