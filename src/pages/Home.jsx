@@ -83,40 +83,7 @@ function Home() {
             <h2>Latest Insights</h2>
 
             <div className="insights-grid">
-              <Link 
-                to="/insights/modular-aircraft-architecture" 
-                className="insight-card"
-              >
-                <p className="insight-label">OBSIDIAN INSIGHTS • VOL 1 • ISSUE 1</p>
-
-                <h3>Why Modular Aircraft Architecture Matters</h3>
-
-                <p>
-                  Most aircraft are designed as individual products. We believe the future 
-                  belongs to adaptable platforms that support multiple missions, evolving 
-                  technologies, and long-term value.
-                </p>
-
-                <span className="insight-read-more">Read Article →</span>
-              </Link>
-
-              <Link 
-                to="/insights/what-mosaic-means" 
-                className="insight-card"
-              >
-                <p className="insight-label">OBSIDIAN INSIGHTS • VOLUME 1 • ISSUE 2</p>
-
-                <h3>What MOSAIC Means for the Future of U.S. Aviation</h3>
-
-                <p>
-                  On July 24, 2026, the FAA's Modernization of Special Airworthiness Certification 
-                  initiative, commonly known as MOSAIC, will take effect. The changes represent the 
-                  most significant update to light aircraft regulations since the creation of the 
-                  Sport Pilot and Light Sport Aircraft categories.
-                </p>
-
-                <span className="insight-read-more">Read Article →</span>
-              </Link>
+              
 
               <Link 
                 to="/insights/why-upgradeability-matters" 
