@@ -100,6 +100,12 @@ function Home() {
                 <span className="insight-read-more">Read Article →</span>
               </Link>
             </div>
+
+            <div className="insights-archive-link">
+              <Link className="archive-link" to="/insights/archive">
+                Explore Previous Issues →
+              </Link>
+            </div>
           </section>
         </main>
       </>

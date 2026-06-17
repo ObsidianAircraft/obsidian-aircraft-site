@@ -17,6 +17,7 @@ import Insights from "./pages/Insights";
 import WhyModularArchitecture from "./pages/Why-Modular-Architecture";
 import WhatMosaicMeansForTheFutureOfUSAviation from "./pages/What-Mosaic-Means-For-The-Future-Of-US-Aviation";
 import WhyUpgradeabilityMatters from "./pages/Why-Upgradeability-Matters";
+import Archive from "./pages/Archive";
 
 function App() {
   return (
@@ -46,6 +47,10 @@ function App() {
         <Route
           path="insights/why-upgradeability-matters"
           element={<WhyUpgradeabilityMatters />}
+        />
+        <Route
+          path="insights/archive"
+          element={<Archive />}
         />
       </Routes>
       
