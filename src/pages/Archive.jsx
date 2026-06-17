@@ -16,19 +16,20 @@ function Archive() {
                     Summer 2026 • Volume 1
                 </div>
 
+
                 <div className="archive-list">
+                    <Link
+                    to="/insights/modular-aircraft-architecture"
+                    className="archive-list-link"
+                    >
+                        Issue 1 • Why Modular Aircraft Architecture Matters
+                    </Link>
+                    
                     <Link 
                     to="/insights/what-mosaic-means"
                     className="archive-list-link"
                     >
-                    Issue 1 • What MOSAIC Means for the Future of U.S. Aviation
-                    </Link>
-                    
-                    <Link
-                    to="/insights/why-modular-architecture"
-                    className="archive-list-link"
-                    >
-                        Issue 2 • Why Modular Aircraft Architecture Matters
+                    Issue 2 • What MOSAIC Means for the Future of U.S. Aviation
                     </Link>
                     
                     <Link
