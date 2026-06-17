@@ -16,6 +16,7 @@ import Join from "./pages/Join";
 import Insights from "./pages/Insights";
 import WhyModularArchitecture from "./pages/Why-Modular-Architecture";
 import WhatMosaicMeansForTheFutureOfUSAviation from "./pages/What-Mosaic-Means-For-The-Future-Of-US-Aviation";
+import WhyUpgradeabilityMatters from "./pages/Why-Upgradeability-Matters";
 
 function App() {
   return (
@@ -41,6 +42,10 @@ function App() {
         <Route
           path="insights/what-mosaic-means"
           element={<WhatMosaicMeansForTheFutureOfUSAviation />}
+        />
+        <Route
+          path="insights/why-upgradeability-matters"
+          element={<WhyUpgradeabilityMatters />}
         />
       </Routes>
       

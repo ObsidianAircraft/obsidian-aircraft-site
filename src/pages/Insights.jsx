@@ -44,6 +44,23 @@ function Insights() {
 
                 <span className="insight-read-more">Read Article →</span>
               </Link>
+
+              <Link 
+                to="/insights/why-upgradeability-matters" 
+                className="insight-card"
+              >
+                <p className="insight-label">SUMMER 2026 • OBSIDIAN INSIGHTS • VOLUME 1 • ISSUE 3</p>
+
+                <h3>Why Upgradeability Matters in Aircraft Design</h3>
+
+                <p>
+                  Although many training aircraft are decades old, few remain exactly as
+                  they were when they left the factory. The lesson is straightforward: 
+                  durability alone is not enough. Adaptability matters as well.
+                </p>
+
+                <span className="insight-read-more">Read Article →</span>
+              </Link>
             </div>
           </section>
     </main>
