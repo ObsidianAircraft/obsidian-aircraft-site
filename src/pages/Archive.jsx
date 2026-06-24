@@ -38,6 +38,13 @@ function Archive() {
                     >
                         Issue 3 • Why Upgradeability Matters in Aircraft Design
                     </Link>
+
+                    <Link
+                    to="/insights/fixed-vs-retractable"
+                    className="archive-list-link"
+                    >
+                        Issue 4 • Fixed Gear vs Retractable Gear: Beyond Cruise Speed
+                    </Link>
                 </div>
                 
                 <div className="archive-header">

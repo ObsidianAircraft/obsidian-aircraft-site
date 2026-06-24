@@ -79,22 +79,25 @@ function Home() {
           </section>
 
             
-          <section className="home-insights">
+          <section className="home-insights" id="current-issue">
             <h2>Latest Insights</h2>
 
-            <div className="insights-grid">
+            <div className="insights-grid" >
               
 
               <Link 
                 to="/insights/why-upgradeability-matters" 
                 className="insight-card"
               >
-                <p className="insight-label">OBSIDIAN INSIGHTS • VOLUME 1 • ISSUE 3</p>
+                <p className="insight-label">OBSIDIAN INSIGHTS • VOLUME 1 • ISSUE 4</p>
 
-                <h3>Why Upgradeability Matters in Aircraft Design</h3>
+                <h3>Fixed Gear vs Retractable Gear: Beyond Cruise Speed</h3>
 
                 <p>
-                  Although many training aircraft are decades old, few remain exactly as they were when they left the factory. The lesson is straightforward: durability alone is not enough. Adaptability matters as well.
+                  The choice between fixed and retractable landing gear affects maintenance, 
+                  operating costs, insurance, training requirements, system complexity, and 
+                  even the long-term economics of aircraft ownership. As with many engineering 
+                  decisions, the best solution depends on the mission the aircraft is intended to serve.
                 </p>
 
                 <span className="insight-read-more">Read Article →</span>

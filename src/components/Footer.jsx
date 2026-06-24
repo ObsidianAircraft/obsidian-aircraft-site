@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "./Footer.css";
-import { FaXTwitter, FaInstagram } from "react-icons/fa6";
+import { FaFacebook, FaXTwitter, FaInstagram, FaLinkedin, FaThreads } from "react-icons/fa6";
 
 function Footer() {
   return (
@@ -27,6 +27,15 @@ function Footer() {
 
         <div className="footer-social">
           <a
+            href="https://www.facebook.com/obsidianairllc"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Obsidian Aircraft on Facebook"
+          >
+            <FaFacebook />
+          </a>
+          
+          <a
             href="https://x.com/obsidianairllc"
             target="_blank"
             rel="noopener noreferrer"
@@ -42,6 +51,24 @@ function Footer() {
             aria-label="Obsidian Aircraft on Instagram"
           >
             <FaInstagram />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/company/obsidianairllc"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Obsidian Aircraft on LinkedIn"
+          >
+            <FaLinkedin />
+          </a>
+
+          <a
+            href="https://www.threads.com/obsidianairllc"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Obsidian Aircraft on Threads"
+          >
+            <FaThreads />
           </a>
         </div>
 

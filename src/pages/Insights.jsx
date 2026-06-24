@@ -10,18 +10,41 @@ function Insights() {
             </div>
 
             <div className="insights-grid">
+              <div className="insights-archive-link">
+                <Link className="archive-link" to="/insights/archive">
+                  Explore Previous Issues →
+                </Link>
+              </div>
               <Link 
-                to="/insights/modular-aircraft-architecture" 
+                to="/insights/fixed-vs-retractable" 
                 className="insight-card"
               >
-                <p className="insight-label">SUMMER 2026 • OBSIDIAN INSIGHTS • VOLUME 1 • ISSUE 1</p>
+                <p className="insight-label">SUMMER 2026 • OBSIDIAN INSIGHTS • VOLUME 1 • ISSUE 4</p>
 
-                <h3>Why Modular Aircraft Architecture Matters</h3>
+                <h3>Fixed Gear vs Retractable Gear: Beyond Cruise Speed</h3>
 
                 <p>
-                  Most aircraft are designed as individual products. We believe the future 
-                  belongs to adaptable platforms that support multiple missions, evolving 
-                  technologies, and long-term value.
+                  The choice between fixed and retractable landing gear affects maintenance, 
+                  operating costs, insurance, training requirements, system complexity, and 
+                  even the long-term economics of aircraft ownership. As with many engineering 
+                  decisions, the best solution depends on the mission the aircraft is intended to serve.
+                </p>
+
+                <span className="insight-read-more">Read Article →</span>
+              </Link>
+
+              <Link 
+                to="/insights/why-upgradeability-matters" 
+                className="insight-card"
+              >
+                <p className="insight-label">SUMMER 2026 • OBSIDIAN INSIGHTS • VOLUME 1 • ISSUE 3</p>
+
+                <h3>Why Upgradeability Matters in Aircraft Design</h3>
+
+                <p>
+                  Although many training aircraft are decades old, few remain exactly as
+                  they were when they left the factory. The lesson is straightforward: 
+                  durability alone is not enough. Adaptability matters as well.
                 </p>
 
                 <span className="insight-read-more">Read Article →</span>
@@ -46,17 +69,17 @@ function Insights() {
               </Link>
 
               <Link 
-                to="/insights/why-upgradeability-matters" 
+                to="/insights/modular-aircraft-architecture" 
                 className="insight-card"
               >
-                <p className="insight-label">SUMMER 2026 • OBSIDIAN INSIGHTS • VOLUME 1 • ISSUE 3</p>
+                <p className="insight-label">SUMMER 2026 • OBSIDIAN INSIGHTS • VOLUME 1 • ISSUE 1</p>
 
-                <h3>Why Upgradeability Matters in Aircraft Design</h3>
+                <h3>Why Modular Aircraft Architecture Matters</h3>
 
                 <p>
-                  Although many training aircraft are decades old, few remain exactly as
-                  they were when they left the factory. The lesson is straightforward: 
-                  durability alone is not enough. Adaptability matters as well.
+                  Most aircraft are designed as individual products. We believe the future 
+                  belongs to adaptable platforms that support multiple missions, evolving 
+                  technologies, and long-term value.
                 </p>
 
                 <span className="insight-read-more">Read Article →</span>

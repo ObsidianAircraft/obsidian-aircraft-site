@@ -976,10 +976,16 @@ button {
     margin-top: 0;
     margin-bottom: 5rem;
   }
+
+  .insights-archive-link {
+    text-align: center;
+    margin-left: 0;
+  }
 }
 
 .insights-archive-link {
-  margin-top: 5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   text-align: center;
 }
 

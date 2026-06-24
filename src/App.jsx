@@ -17,7 +17,9 @@ import Insights from "./pages/Insights";
 import WhyModularArchitecture from "./pages/Why-Modular-Architecture";
 import WhatMosaicMeansForTheFutureOfUSAviation from "./pages/What-Mosaic-Means-For-The-Future-Of-US-Aviation";
 import WhyUpgradeabilityMatters from "./pages/Why-Upgradeability-Matters";
+import FixedVsRetractable from "./pages/Fixed-Vs-Retractable";
 import Archive from "./pages/Archive";
+import ScrollToHash from "./components/ScrollToHash";
 
 function App() {
   return (
@@ -26,6 +28,7 @@ function App() {
       <Analytics />
       <SpeedInsights />
       <ScrollToTop />
+      <ScrollToHash />
       <Navbar />
 
       <Routes>
@@ -47,6 +50,10 @@ function App() {
         <Route
           path="insights/why-upgradeability-matters"
           element={<WhyUpgradeabilityMatters />}
+        />
+        <Route 
+          path="insights/fixed-vs-retractable"
+          element={<FixedVsRetractable />}
         />
         <Route
           path="insights/archive"
