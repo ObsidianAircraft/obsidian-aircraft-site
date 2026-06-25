@@ -1,10 +1,15 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
+import { trackFlightDeckPageView, trackFlightDeckSubmit } from "../lib/analytics";
 
 function Join() {
   const [ name, setName ] = useState("");
   const [ email, setEmail ] = useState("");
   const [ status, setStatus ] = useState("");
+
+  useEffect(() => {
+    trackFlightDeckPageView();
+  }, []);
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -25,10 +30,16 @@ function Join() {
 
       const data = await response.json();
 
+      if (!response.ok) {
+        throw new Error(data.message || "Signup failed");
+      }
+
       if (data.success) {
         setStatus(data.message || "Welcome aboard.");
         setName("");
         setEmail("");
+
+        trackFlightDeckSubmit("join_page");
       } else {
         setStatus(data.message || "Unable to submit. Please try again.");
       }
@@ -43,7 +54,7 @@ function Join() {
         <title>Join the Flight Deck | Obsidian Aircraft</title>
         <meta
           name="description"
-          content="Frequently asked questions about Obsidian Aircraft, aircraft development, and future platform plans."
+          content="Join the Obsidian Aircraft Flight Deck to receive development updates, aircraft announcements, and behind-the-scenes progress."
         />
       </Helmet>
       <main className="join-page">

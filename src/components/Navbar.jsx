@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
+import { trackFlightDeckClick } from "../lib/analytics";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -30,7 +31,11 @@ function Navbar() {
           <a href="https://merch.obsidianaircraft.com" target="_blank" rel="noreferrer">Merch</a>
         </nav>
 
-        <Link to="/join" className="navbar-button">
+        <Link 
+          to="/join" 
+          className="navbar-button"
+          onClick={() => trackFlightDeckClick("navbar")}
+        >
         Join the Flight Deck
         </Link>
 

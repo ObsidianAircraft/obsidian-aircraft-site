@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { trackFlightDeckClick } from "../lib/analytics"
 
 
 function Home() {
@@ -35,7 +36,11 @@ function Home() {
             </p>
     {/* 
             <div className="hero-buttons">
-              <Link to="/aircraft" className="hero-button hero-button-primary">
+              <Link 
+                to="/aircraft" 
+                className="hero-button hero-button-primary"
+                onClick={() => trackFlightDeckClick("homepage_hero")}
+              >
                 Explore the Aircraft
               </Link>
 
@@ -67,7 +72,7 @@ function Home() {
                 </p>
               </Link>
 
-              <Link to="/join" className="explore-card">
+              <Link to="/join" className="explore-card" onClick={() => trackFlightDeckClick("homepage_join_card")}>
                 <h3>Join the Flight Deck</h3>
                 <p>
                   Receive updates, announcements, and future
