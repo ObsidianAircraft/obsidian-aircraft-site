@@ -1,6 +1,12 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { trackInsightsPageView } from "../lib/analytics";
 
 function Insights() {
+  useEffect(() => {
+      trackInsightsPageView();
+  }, []);
+
   return (
     <main className="page">
       <section className="home-insights">

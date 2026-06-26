@@ -26,6 +26,7 @@ export function trackFlightDeckSubmit(location = "join_page") {
   trackEvent("sign_up", {
     method: "flight_deck",
     location,
+    page: window.location.pathname,
   });
 }
 
@@ -36,18 +37,43 @@ export function trackCtaClick(name, location) {
   });
 }
 
-export function trackSocialClick(platform, location = "footer") {
+export function trackSocialClick(platform) {
   trackEvent("social_click", {
     platform,
-    location,
+    location = window.location.pathname,
   });
 }
 
-export function trackInsightsView(articleTitle, issueNumber) {
+export function trackInsightsView(volume, issue) {
   trackEvent("insights_article_view", {
-    article_title: articleTitle,
-    issue_number: issueNumber,
+    article: window.location.pathname,
+    volume,
+    issue,
   });
+}
+
+export function trackAircraftPageView() {
+    trackEvent("aircraft_page_view", {
+        section: "aircraft_overview",
+        page: window.location.pathname,
+    });
+}
+
+export function trackDevelopmentPageView() {
+    trackEvent("development_page_view", {
+        page: window.location.pathname,
+    });
+}
+
+export function trackInsightsPageView() {
+    trackEvent("insights_page_view", {
+        page: window.location.pathname,
+    });
+}
+
+export function trackAboutPageView() {
+    trackEvent("about_page_view", {
+    });
 }
 
 export function trackAircraftView(model, variant = "") {
@@ -55,4 +81,30 @@ export function trackAircraftView(model, variant = "") {
     model,
     variant,
   });
+}
+
+export function trackFaqPageView() {
+    trackEvent("faq_page_view", {
+        page: window.location.pathname,
+    });
+}
+
+export function trackArchivePageView() {
+    trackEvent("archive_page_view", {
+        page: window.location.pathname,
+    });
+}
+
+export function trackHomePageView() {
+    trackEvent("home_page_view", {
+        page: window.location.pathname,
+    });
+}
+
+export function trackNavigationClick(destination, location) {
+    trackEvent("navigation_click", {
+        destination,
+        location,
+        page: window.location.pathname,
+    });
 }

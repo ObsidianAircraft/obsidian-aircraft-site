@@ -1,6 +1,12 @@
+import { useEffect } from "react";
+import { trackInsightsView } from "../lib/analytics";
 import { Helmet } from "react-helmet-async";
 
 function WhyModularArchitecture() {
+  useEffect(() => {
+    trackInsightsView(1,1);
+  }, []);
+
   return (
     <>
       <Helmet>

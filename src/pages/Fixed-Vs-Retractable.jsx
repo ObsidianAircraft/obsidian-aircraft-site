@@ -1,6 +1,12 @@
 import { Helmet } from "react-helmet-async";
+import { useEffect } from "react";
+import { trackInsightsView } from "../lib/analytics";
 
 function FixedVsRetractable() {
+  useEffect(() => {
+    trackInsightsView(1,4);
+  }, []);
+  
   return (
     <>
       <Helmet>

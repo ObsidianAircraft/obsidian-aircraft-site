@@ -1,6 +1,12 @@
+import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
+import { trackAboutPageView } from "../lib/analytics";
 
 function About() {
+  useEffect (() => {
+    trackAboutPageView();
+  });
+  
   return (
     <>
       <Helmet>

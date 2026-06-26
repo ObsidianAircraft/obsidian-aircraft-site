@@ -1,6 +1,12 @@
+import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
+import { trackInsightsView } from "../lib/analytics";
 
 function WhatMosaicMeansForTheFutureOfUSAviation() {
+  useEffect(() => {
+    trackInsightsView(1,2);
+  }, []);
+
   return (
     <>
       <Helmet>

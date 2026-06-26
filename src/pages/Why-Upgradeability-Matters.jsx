@@ -1,6 +1,12 @@
 import { Helmet } from "react-helmet-async";
+import { trackInsightsView } from "../lib/analytics";
+import { useEffect } from "react";
 
 function WhyUpgradeabilityMatters() {
+  useEffect(() => {
+    trackInsightsView(1,3);
+  }, []);
+  
   return (
     <>
       <Helmet>

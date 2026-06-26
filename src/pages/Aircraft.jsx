@@ -1,6 +1,12 @@
 import { Helmet } from "react-helmet-async";
+import { trackAircraftPageView } from "../lib/analytics";
+import { useEffect } from "react";
 
 function Aircraft() {
+  useEffect(() => {
+    trackAircraftPageView();
+  }, []);
+  
   return (
     <>
       <Helmet>

@@ -1,6 +1,12 @@
+import { useEffect } from "react";
+import { trackArchivePageView } from "../lib/analytics";
 import { Link } from "react-router-dom";
 
 function Archive() {
+  useEffect(() => {
+    trackArchivePageView();
+  });
+
   return (
     <main className="page">
       <section className="home-insights">

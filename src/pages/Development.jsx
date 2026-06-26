@@ -1,6 +1,12 @@
 import { Helmet } from "react-helmet-async";
+import { trackDevelopmentPageView } from "../lib/analytics";
+import { useEffect } from "react";
 
 function Development() {
+  useEffect(() => {
+    trackDevelopmentPageView();
+  }, []);
+
   return (
     <>
       <Helmet>

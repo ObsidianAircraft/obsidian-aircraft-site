@@ -1,9 +1,14 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { trackFlightDeckClick } from "../lib/analytics"
+import { trackFlightDeckClick, trackHomePageView } from "../lib/analytics"
 
 
 function Home() {
+  useEffect(() => {
+    trackHomePageView();
+  });
+  
   return (
     <>
       <Helmet>
