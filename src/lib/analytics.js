@@ -40,7 +40,7 @@ export function trackCtaClick(name, location) {
 export function trackSocialClick(platform) {
   trackEvent("social_click", {
     platform,
-    location = window.location.pathname,
+    location: window.location.pathname,
   });
 }
 
