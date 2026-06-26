@@ -29,7 +29,7 @@ function Footer() {
 
         <div className="footer-social">
           <a
-            href="https://www.facebook.com/obsidianairllc"
+            href="https://www.facebook.com/profile.php?id=61584350915780"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Obsidian Aircraft on Facebook"
