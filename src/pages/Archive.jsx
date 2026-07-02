@@ -51,6 +51,13 @@ function Archive() {
                     >
                         Issue 4 • Fixed Gear vs Retractable Gear: Beyond Cruise Speed
                     </Link>
+
+                    <Link
+                    to="/insights/why-composite"
+                    className="archive-list-link"
+                    >
+                        Issue 5 • Why We Chose Composite Construction
+                    </Link>
                 </div>
                 
                 <div className="archive-header">

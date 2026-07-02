@@ -18,6 +18,7 @@ import WhyModularArchitecture from "./pages/Why-Modular-Architecture";
 import WhatMosaicMeansForTheFutureOfUSAviation from "./pages/What-Mosaic-Means-For-The-Future-Of-US-Aviation";
 import WhyUpgradeabilityMatters from "./pages/Why-Upgradeability-Matters";
 import FixedVsRetractable from "./pages/Fixed-Vs-Retractable";
+import WhyCompositeConstruction from "./pages/Why-Composite";
 import Archive from "./pages/Archive";
 import ScrollToHash from "./components/ScrollToHash";
 
@@ -58,6 +59,10 @@ function App() {
         <Route
           path="insights/archive"
           element={<Archive />}
+        />
+        <Route
+          path="insights/why-composite"
+          element={<WhyCompositeConstruction />}
         />
       </Routes>
       

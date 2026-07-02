@@ -96,18 +96,17 @@ function Home() {
               
 
               <Link 
-                to="/insights/why-upgradeability-matters" 
+                to="/insights/why-composite" 
                 className="insight-card"
               >
-                <p className="insight-label">OBSIDIAN INSIGHTS • VOLUME 1 • ISSUE 4</p>
+                <p className="insight-label">OBSIDIAN INSIGHTS • VOLUME 1 • ISSUE 5</p>
 
-                <h3>Fixed Gear vs Retractable Gear: Beyond Cruise Speed</h3>
+                <h3>Why We Chose Composite Construction</h3>
 
                 <p>
-                  The choice between fixed and retractable landing gear affects maintenance, 
-                  operating costs, insurance, training requirements, system complexity, and 
-                  even the long-term economics of aircraft ownership. As with many engineering 
-                  decisions, the best solution depends on the mission the aircraft is intended to serve.
+                  When people ask why Obsidian Aircraft chose composite construction,
+                  they often expect the answer to begin with aerodynamics or weight
+                  savings.
                 </p>
 
                 <span className="insight-read-more">Read Article →</span>

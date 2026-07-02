@@ -22,6 +22,23 @@ function Insights() {
                 </Link>
               </div>
               <Link 
+                to="/insights/why-composite" 
+                className="insight-card"
+              >
+                <p className="insight-label">SUMMER 2026 • OBSIDIAN INSIGHTS • VOLUME 1 • ISSUE 5</p>
+
+                <h3>Why We Chose Composite Construction</h3>
+
+                <p>
+                  When people ask why Obsidian Aircraft chose composite construction,
+                  they often expect the answer to begin with aerodynamics or weight
+                  savings.
+                </p>
+
+                <span className="insight-read-more">Read Article →</span>
+              </Link>
+              
+              <Link 
                 to="/insights/fixed-vs-retractable" 
                 className="insight-card"
               >
